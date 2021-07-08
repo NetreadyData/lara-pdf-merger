@@ -2032,7 +2032,7 @@ class TCPDF_FONTS {
 	 * @since 1.53.0.TC005 (2005-01-05)
 	 * @public static
 	 */
-	public static function UTF8ToUTF16BE($str, $setbom=false, $isunicode, &$currentfont) {
+	public static function UTF8ToUTF16BE($str, $setbom, $isunicode, &$currentfont) {
 		if (!$isunicode) {
 			return $str; // string is not in unicode
 		}
